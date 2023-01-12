@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: load-balanser
+  name: load-balancer
 spec:
   ports:
     - port: 80

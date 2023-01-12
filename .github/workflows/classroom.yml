@@ -34,7 +34,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Docker Push
-        run: docker-compose push
+        run: |
+          cd ./scripts
+          chmod +x create-push-images.sh
+          ./create-push-images.sh
 
       - name: Install Kubectl
         uses: Azure/setup-kubectl@v3.1
@@ -51,8 +54,8 @@ jobs:
       - name: Deploy Services to YC
         run: helm install services k8s/rsoi4-chart
 
-      - name: Wait 90 seconds
-        run: sleep 90
+      - name: Wait 45 seconds
+        run: sleep 45
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
