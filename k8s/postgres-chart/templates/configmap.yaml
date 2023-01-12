@@ -25,3 +25,12 @@ data:
     CREATE DATABASE {{ $database.name }};
     GRANT ALL PRIVILEGES ON DATABASE {{ $database.name }} TO {{ $database.user }};
     {{- end }}
+  30-create-databases.sql: |
+    CREATE DATABASE tickets;
+    GRANT ALL PRIVILEGES ON DATABASE tickets TO program;
+  
+    CREATE DATABASE flights;
+    GRANT ALL PRIVILEGES ON DATABASE flights TO program;
+  
+    CREATE DATABASE privileges;
+    GRANT ALL PRIVILEGES ON DATABASE privileges TO program;
