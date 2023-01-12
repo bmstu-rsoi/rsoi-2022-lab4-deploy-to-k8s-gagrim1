@@ -10,7 +10,7 @@ users:
   - name: program
     password: test
 
-datases:
+databases:
   - name: flights
     user: program
   - name: tickets
