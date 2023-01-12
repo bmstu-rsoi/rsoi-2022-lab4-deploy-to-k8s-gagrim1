@@ -54,8 +54,8 @@ jobs:
       - name: Deploy Services to YC
         run: helm install services k8s/rsoi4-chart
 
-      - name: Wait 45 seconds
-        run: sleep 45
+      - name: Wait 120 seconds
+        run: sleep 120
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
