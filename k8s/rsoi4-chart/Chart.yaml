@@ -20,13 +20,13 @@ version: 1.0.0
 dependencies:
   - name: service-chart
     version: 1.0.0
-    alias: loyalty
+    alias: ticket
   - name: service-chart
     version: 1.0.0
-    alias: payment
+    alias: flight
   - name: service-chart
     version: 1.0.0
-    alias: reservation
+    alias: bonus
   - name: service-chart
     version: 1.0.0
     alias: gateway
