@@ -1,0 +1,28 @@
+loyalty:
+  service:
+    port: 8050
+    image:
+      name: romanov/bonus-service
+      tag: latest
+
+payment:
+  service:
+    port: 8060
+    image:
+      name: romanov/flight-service
+      tag: latest
+
+reservation:
+  service:
+    port: 8070
+    image:
+      name: romanov/ticket-service
+      tag: latest
+
+gateway:
+  service:
+    port: 8080
+    image:
+      name: romanov/gateway
+      tag: latest
+    isGateway: true
