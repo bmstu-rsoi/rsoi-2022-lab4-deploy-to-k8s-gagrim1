@@ -49,7 +49,7 @@ jobs:
         run: helm install databases k8s/postgres-chart
 
       - name: Deploy Services to YC
-        run: helm install services k8s/services-chart
+        run: helm install services k8s/rsoi4-chart
 
       - name: Wait 90 seconds
         run: sleep 90
