@@ -1,0 +1,10 @@
+spring:
+  flyway:
+    baselineOnMigrate: true
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://postgres-char-service:5432/tickets
+    username: program
+    password: test

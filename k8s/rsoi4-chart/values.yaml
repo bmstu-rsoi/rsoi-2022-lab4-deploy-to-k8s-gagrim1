@@ -1,0 +1,28 @@
+loyalty:
+  service:
+    port: 8050
+    image:
+      name: yuromanov/bonus-service
+      tag: latest
+
+payment:
+  service:
+    port: 8060
+    image:
+      name: yuromanov/flight-service
+      tag: latest
+
+reservation:
+  service:
+    port: 8070
+    image:
+      name: yuromanov/ticket-service
+      tag: latest
+
+gateway:
+  service:
+    port: 8080
+    image:
+      name: yuromanov/gateway
+      tag: latest
+    isGateway: true

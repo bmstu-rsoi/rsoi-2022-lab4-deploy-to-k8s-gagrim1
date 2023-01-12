@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: load-balanser
+spec:
+  ports:
+    - port: 80
+      name: connector
+      targetPort: 8080
+  selector:
+    app: gateway
+  type: LoadBalancer
